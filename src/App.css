@@ -1,86 +1,102 @@
 weather-card {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px);
-    color: #fff;
-    border-radius: 16px;
-    padding: 30px;
-    margin-top: 30px;
-    width: 90%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease-in-out;
-  }
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Weather-specific backgrounds */
+.clear {
+  background-image: url('https://source.unsplash.com/600x400/?sunny,sky');
+  background-size: cover;
+  background-position: center;
+}
+
+.clouds {
+  background-image: url('https://source.unsplash.com/600x400/?cloudy,sky');
+}
+
+.rain {
+  background-image: url('https://source.unsplash.com/600x400/?rain');
+}
+
+.snow {
+  background-image: url('https://source.unsplash.com/600x400/?snow');
+}
+
+.thunderstorm {
+  background-image: url('https://source.unsplash.com/600x400/?thunderstorm');
+}
+
+.drizzle {
+  background-image: url('https://source.unsplash.com/600x400/?drizzle,rain');
+}
+
+.mist, .fog {
+  background-image: url('https://source.unsplash.com/600x400/?fog');
+}
+
+/* Fallback general app styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #fff;
+  max-height: 85vh;
+  max-width: 30%;
+  flex-direction: column;
+  display: flex;
+  margin: 20px;
+  margin-left:35% ;
   
-  .weather-card img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  /* Weather-specific backgrounds */
-  .clear {
-    background-image: url('https://source.unsplash.com/600x400/?sunny,sky');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .clouds {
-    background-image: url('https://source.unsplash.com/600x400/?cloudy,sky');
-  }
-  
-  .rain {
-    background-image: url('https://source.unsplash.com/600x400/?rain');
-  }
-  
-  .snow {
-    background-image: url('https://source.unsplash.com/600x400/?snow');
-  }
-  
-  .thunderstorm {
-    background-image: url('https://source.unsplash.com/600x400/?thunderstorm');
-  }
-  
-  .drizzle {
-    background-image: url('https://source.unsplash.com/600x400/?drizzle,rain');
-  }
-  
-  .mist, .fog {
-    background-image: url('https://source.unsplash.com/600x400/?fog');
-  }
-  
-  /* Fallback general app styles */
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: #fff;
-    min-height: 100vh;
-  }
-  
-  .app {
-    text-align: center;
-    padding: 40px;
-  }
-  
-  input, button {
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    margin: 5px;
-    font-size: 16px;
-  }
-  
-  input {
-    width: 220px;
-  }
-  
-  button {
-    background-color: #00c9a7;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #009688;
-  }
+}
+
+
+.app {
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  background-image: url(back.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  font-size:large;
+}
+
+input, button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+input {
+  width: 220px;
+}
+
+button {
+  background-color: #00c9a7;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009688;
+}
